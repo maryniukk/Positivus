@@ -1,0 +1,67 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body & Locked
+body {
+    font-family: $fontMain;
+    &.locked {
+        overflow: hidden;
+    }
+    // Dark mode styles
+    &.dark {
+        background: #242424;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+//Hero Section 
+.section__hero{
+    padding-bottom: 70px;
+}
+//Carousel Section
+.section__carousel{
+    padding-bottom: 140px;
+}
+//Services Section
+.section__heading{
+    display: flex;
+}
+.section__text{
+    font-size: 18px;
+    line-height: normal;
+    margin-left: 40px;
+}
+.section__heading{
+    padding-bottom: 80px;
+}
