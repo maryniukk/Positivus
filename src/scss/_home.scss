@@ -20,7 +20,7 @@
     background-color: white;
     &:hover{
         background-color: #B9FF66;
-        transition: 0.3s ease-in;
+        transition: all 0.3s ease-in;
     }
 }
 .hero__left{
@@ -197,7 +197,7 @@
     /* 140% */
     &:hover{
         font-size: 21px;
-        transition: 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 }
 .link__text__white{
@@ -211,59 +211,10 @@
     /* 140% */
     &:hover {
             font-size: 21px;
-            transition: 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
         }
 }
 //Section Offer
-.section__offer{
-    display: flex;
-    justify-content: center;
-}
-.section__offer__wrapper{
-    width: 1240px;
-    height: 347px;
-    padding: 0px 60px;
-        align-items: center;
-        flex-shrink: 0;
-        border-radius: 45px;
-        background: var(--Grey, #F3F3F3);
-}
-.section__left{
-    padding-top: 50px;
-}
-.offer__title{
-    /* h3 */    
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.offer__text{
-    color: #000;
-        /* p */
-        padding-top: 26px;
-        width: 500px;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-}
-.offer__btn{
-    color: white;
-        border-radius: 14px;
-        background: var(--Dark, #191A23);
-        padding: 20px 35px;
-        text-align: center;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
-        width: 288px;
-    
-        /* 140% */
-        &:hover {
-            background: #B9FF66;
-            color: black;
-            transition: 0.3s ease-in;
-        }
-}
+
+
+
