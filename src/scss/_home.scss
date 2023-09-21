@@ -73,7 +73,6 @@
     filter: grayscale(100%);
     &:hover{
         transform: scale(1.1);
-            /* Увеличение изображения в 1.2 раза */
             transition: transform 0.45s ease-in-out;
     }
 }
