@@ -333,17 +333,17 @@ body.dark {
 .carousel__item {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .carousel__item:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.45s ease-in-out;
-  transition: -webkit-transform 0.45s ease-in-out;
-  -o-transition: transform 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .section__text {
@@ -526,6 +526,73 @@ body.dark {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.section__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__offer__wrapper {
+  width: 1240px;
+  height: 347px;
+  padding: 0px 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 45px;
+  background: var(--Grey, #F3F3F3);
+}
+
+.section__left {
+  padding-top: 50px;
+}
+
+.offer__title {
+  /* h3 */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.offer__text {
+  color: #000;
+  /* p */
+  padding-top: 26px;
+  width: 500px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.offer__btn {
+  color: white;
+  border-radius: 14px;
+  background: var(--Dark, #191A23);
+  padding: 20px 35px;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  width: 288px;
+  /* 140% */
+}
+
+.offer__btn:hover {
+  background: #B9FF66;
+  color: black;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 @media (max-width: 1449.98px) {
