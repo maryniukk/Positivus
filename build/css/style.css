@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -127,6 +129,14 @@ body.dark {
 
 .section__heading {
   padding-bottom: 80px;
+}
+
+.card__01 {
+  color: aquamarine;
+}
+
+.section__cards {
+  padding-bottom: 100px;
 }
 
 .header {
@@ -327,6 +337,27 @@ body.dark {
           filter: grayscale(100%);
 }
 
+.carousel__item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  /* Увеличение изображения в 1.2 раза */
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  -o-transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+.section__text {
+  /* p */
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .section__title {
   /* h2 */
   -webkit-box-pack: center;
@@ -341,8 +372,163 @@ body.dark {
   background: var(--Green, #B9FF66);
 }
 
-.section__text {
-  width: 580px;
+.section__cards {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 310px 310px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.card__wrapper__white {
+  display: inline-block;
+  width: 600px;
+  height: 310px;
+  padding: 50px;
+  border-radius: 45px;
+  border: 1px solid var(--Dark, #191A23);
+  background: var(--Grey, #F3F3F3);
+  -webkit-box-shadow: 0px 5px 0px 0px #191A23;
+          box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.card__wrapper__green {
+  width: 600px;
+  height: 310px;
+  padding: 50px;
+  border-radius: 45px;
+  border: 1px solid var(--Dark, #191A23);
+  background: var(--Green, #B9FF66);
+  -webkit-box-shadow: 0px 5px 0px 0px #191A23;
+          box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.card__wrapper__black {
+  color: black;
+  width: 600px;
+  height: 310px;
+  padding: 50px;
+  border-radius: 45px;
+  border: 1px solid var(--Dark, #191A23);
+  background: var(--Dark, #191A23);
+  -webkit-box-shadow: 0px 5px 0px 0px #191A23;
+          box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.title__green {
+  /* h3 */
+  display: inherit;
+  padding: 0px 7px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 7px;
+  background: var(--Green, #B9FF66);
+}
+
+.title__green.title__four {
+  display: inline;
+}
+
+.title__white {
+  /* h3 */
+  display: inline-block;
+  padding: 0px 7px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 7px;
+  background: #FFF;
+}
+
+.title__white.title__five {
+  display: block;
+}
+
+.card__wrapper__white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__wrapper__green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__wrapper__black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 93px;
+}
+
+.link__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__header {
+  display: inline-block;
+}
+
+.link__text__black {
+  color: black;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 140% */
+}
+
+.link__text__black:hover {
+  font-size: 21px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.link__text__white {
+  color: white;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+  /* 140% */
+}
+
+.link__text__white:hover {
+  font-size: 21px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1449.98px) {
