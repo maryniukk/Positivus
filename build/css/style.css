@@ -137,6 +137,10 @@ body.dark {
   padding-bottom: 100px;
 }
 
+.section__offer {
+  padding-bottom: 140px;
+}
+
 .header {
   background-color: #fff;
 }
@@ -253,12 +257,12 @@ body.dark {
   line-height: 28px;
   /* 140% */
   border-radius: 14px;
-  border: 1px solid var(--Dark, #191A23);
+  border: 1px solid var(--Dark, #191a23);
   background-color: white;
 }
 
 .menu__item-button:hover {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -288,7 +292,7 @@ body.dark {
 .hero__btn__black {
   color: white;
   border-radius: 14px;
-  background: var(--Dark, #191A23);
+  background: var(--Dark, #191a23);
   padding: 20px 35px;
   text-align: center;
   font-size: 20px;
@@ -299,7 +303,7 @@ body.dark {
 }
 
 .hero__btn__black:hover {
-  background: #B9FF66;
+  background: #b9ff66;
   color: black;
   -webkit-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
@@ -366,7 +370,7 @@ body.dark {
   line-height: normal;
   padding: 0px 7px 0 7px;
   border-radius: 7px;
-  background: var(--Green, #B9FF66);
+  background: var(--Green, #b9ff66);
 }
 
 .section__cards {
@@ -386,10 +390,10 @@ body.dark {
   height: 310px;
   padding: 50px;
   border-radius: 45px;
-  border: 1px solid var(--Dark, #191A23);
-  background: var(--Grey, #F3F3F3);
-  -webkit-box-shadow: 0px 5px 0px 0px #191A23;
-          box-shadow: 0px 5px 0px 0px #191A23;
+  border: 1px solid var(--Dark, #191a23);
+  background: var(--Grey, #f3f3f3);
+  -webkit-box-shadow: 0px 5px 0px 0px #191a23;
+          box-shadow: 0px 5px 0px 0px #191a23;
 }
 
 .card__wrapper__green {
@@ -397,10 +401,10 @@ body.dark {
   height: 310px;
   padding: 50px;
   border-radius: 45px;
-  border: 1px solid var(--Dark, #191A23);
-  background: var(--Green, #B9FF66);
-  -webkit-box-shadow: 0px 5px 0px 0px #191A23;
-          box-shadow: 0px 5px 0px 0px #191A23;
+  border: 1px solid var(--Dark, #191a23);
+  background: var(--Green, #b9ff66);
+  -webkit-box-shadow: 0px 5px 0px 0px #191a23;
+          box-shadow: 0px 5px 0px 0px #191a23;
 }
 
 .card__wrapper__black {
@@ -409,10 +413,10 @@ body.dark {
   height: 310px;
   padding: 50px;
   border-radius: 45px;
-  border: 1px solid var(--Dark, #191A23);
-  background: var(--Dark, #191A23);
-  -webkit-box-shadow: 0px 5px 0px 0px #191A23;
-          box-shadow: 0px 5px 0px 0px #191A23;
+  border: 1px solid var(--Dark, #191a23);
+  background: var(--Dark, #191a23);
+  -webkit-box-shadow: 0px 5px 0px 0px #191a23;
+          box-shadow: 0px 5px 0px 0px #191a23;
 }
 
 .title__green {
@@ -424,7 +428,7 @@ body.dark {
   font-weight: 500;
   line-height: normal;
   border-radius: 7px;
-  background: var(--Green, #B9FF66);
+  background: var(--Green, #b9ff66);
 }
 
 .title__green.title__four {
@@ -440,7 +444,7 @@ body.dark {
   font-weight: 500;
   line-height: normal;
   border-radius: 7px;
-  background: #FFF;
+  background: #fff;
 }
 
 .title__white.title__five {
@@ -526,6 +530,82 @@ body.dark {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.section__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 45px;
+  background: var(--Grey, #f3f3f3);
+  width: 1240px;
+  height: 347px;
+  padding: 0px 60px;
+}
+
+.offer__title {
+  /* h3 */
+  font-family: Space Grotesk;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.offer__text {
+  /* p */
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.offer__btn {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 140% */
+  padding: 20px 35px;
+  color: white;
+  border-radius: 14px;
+  background: var(--Dark, #191a23);
+}
+
+.offer__btn:hover {
+  background: #b9ff66;
+  color: black;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.section__left {
+  width: 500px;
+  padding-top: 60px;
+}
+
+.section__img {
+  padding-left: 300px;
+}
+
+.section__img {
+  position: absolute;
+  bottom: -20px;
 }
 
 @media (max-width: 1449.98px) {
