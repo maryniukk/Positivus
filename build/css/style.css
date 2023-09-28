@@ -904,7 +904,6 @@ body.dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 634px;
   padding: 58px 40px;
   border-radius: 14px;
   background: #292a32;
@@ -917,24 +916,18 @@ body.dark {
   padding-bottom: 50px;
 }
 
-.footer__wrapper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .footer__section__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .mail__input {
   /* p */
+  font-family: Space Grotesk;
   font-style: normal;
   font-weight: 400;
+  width: 285px;
   line-height: normal;
+  font-size: 18px;
   height: 67px;
   border-radius: 14px;
   border: 1px solid #fff;
@@ -978,16 +971,14 @@ body.dark {
 }
 
 .subscribe__btn {
+  font-family: Space Grotesk;
   color: black;
   height: 67px;
+  width: 249px;
   padding: 20px 35px;
   border-radius: 14px;
   background: var(--Green, #b9ff66);
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  /* 140% */
   -webkit-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
