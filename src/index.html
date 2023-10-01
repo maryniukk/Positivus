@@ -88,7 +88,7 @@
               <h3 class="title__white">advertising</h3>
             </div>
             <div class="card__link">
-              <a href="" class="link__item"><img src="./img/btn-1.svg" alt="btn-1" /></a>
+              <a href="" class="link__item"><img class="card__btn__img" src="./img/btn-1.svg" alt="btn-1" /></a>
               <a href="#!" class="link__text__black">Learn more</a>
             </div>
           </div>
@@ -106,7 +106,7 @@
               <h3 class="title__white">Marketing</h3>
             </div>
             <div class="card__link">
-              <a href="" class="link__item"><img src="./img/btn-2.svg" alt="btn-1" /></a>
+              <a href="" class="link__item"><img class="card__btn__img" src="./img/btn-2.svg" alt="btn-1" /></a>
               <a href="#!" class="link__text__white">Learn more</a>
             </div>
           </div>
@@ -124,7 +124,7 @@
               <h3 class="title__green title__four">Marketing</h3>
             </div>
             <div class="card__link">
-              <a href="" class="link__item"><img src="./img/btn-1.svg" alt="btn-green" /></a>
+              <a href="" class="link__item"><img class="card__btn__img" src="./img/btn-1.svg" alt="btn-green" /></a>
               <a href="#!" class="link__text__black">Learn more</a>
             </div>
           </div>
@@ -142,7 +142,7 @@
               <h3 class="title__white title__five">Creation</h3>
             </div>
             <div class="card__link">
-              <a href="" class="link__item"><img src="./img/btn-1.svg" alt="btn-green" /></a>
+              <a href="" class="link__item"><img class="card__btn__img" src="./img/btn-1.svg" alt="btn-green" /></a>
               <a href="#!" class="link__text__black">Learn more</a>
             </div>
           </div>
@@ -160,7 +160,7 @@
               <h3 class="title__green">and Tracking</h3>
             </div>
             <div class="card__link">
-              <a href="" class="link__item"><img src="./img/btn-2.svg" alt="btn-white" /></a>
+              <a href="" class="link__item"><img class="card__btn__img" src="./img/btn-2.svg" alt="btn-white" /></a>
               <a href="#!" class="link__text__white">Learn more</a>
             </div>
           </div>
@@ -282,12 +282,44 @@
       <!--Section Contact-->
       <div class="section__contact">
         <div class="section__contact__header">
-          <h2 class="section__contact__title">Our Working Process</h2>
+          <h2 class="section__contact__title">Contact Us</h2>
           <p class="section__contact__text">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
         </div>
-        <div class="section__contact__wrapper">
-          <div class="wrapper__form">
-            <div class="radio__group"></div>
+        <div class="section__contact__block">
+          <div class="section__contact__wrapper">
+            <div class="section__contact__left">
+              <div class="wrapper__form">
+                <div class="radio__group">
+                  <input class="radio__label__btn" type="radio" id="contactChoice1" name="label" value="Say Hi" />
+                  <label class="radio__label__text" for="contactChoice2">Say Hi</label>
+
+                  <input class="radio__label__btn" type="radio" id="contactChoice2" name="label" value="Get a Quote" />
+                  <label class="radio__label__text" for="contactChoice2">Get a Quote</label>
+                </div>
+              </div>
+
+              <div class="name__form">
+                <label class="name__label" for="username">Name<br /></label>
+                <input class="name__input" type="text" id="username" placeholder="Name" />
+              </div>
+
+              <div class="email__form">
+                <label class="email__label" for="email">Email*<br /></label>
+                <input class="email__input" type="email" id="email" name="email" placeholder="Email" />
+              </div>
+
+              <div class="message__form">
+                <label class="message__label" for="email">Message*<br /></label>
+                <textarea class="message__input" name="textarea" placeholder="Message"></textarea>
+              </div>
+
+              <div class="section__contact__button">
+                <button class="contact__btn">Send Message</button>
+              </div>
+            </div>
+            <div class="section__contact__right">
+              <img src="./img/Illustration__form.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>
